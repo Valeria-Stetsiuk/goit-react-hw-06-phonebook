@@ -8,7 +8,6 @@ const phoneContactsSlice = createSlice({
   reducers: {
     addPhoneContact: (state, { payload }) => {
       if (state.phoneContacts.some(name => name.name === payload.name)) {
-        alert(`${payload.name} is already in contacts!`);
         return;
       }
       state.phoneContacts.push({ id: nanoid(), ...payload });
