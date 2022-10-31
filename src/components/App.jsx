@@ -2,6 +2,7 @@ import { Form } from './ContactForm/ContactForm';
 import { Section } from './Section/Section';
 import { PhoneList } from './PhoneList/PhoneList';
 import { Filter } from './ContactFilter/ContactFilter';
+import s from '../components/App.module.css';
 
 export const App = () => {
   return (
@@ -10,8 +11,10 @@ export const App = () => {
         <Form />
       </Section>
       <Section title="Contacts">
-        <Filter />
-        <PhoneList />
+        <div className={s.Contacts}>
+          <Filter />
+          <PhoneList />
+        </div>
       </Section>
     </>
   );

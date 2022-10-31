@@ -12,7 +12,7 @@ export const Filter = () => {
   };
   return (
     <>
-      <label>
+      <label className={s.label}>
         <span className={s.msgFilter}>Find contact by name</span>
         <input
           type="text"
